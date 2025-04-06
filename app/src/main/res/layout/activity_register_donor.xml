@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/registerdonation"
+    tools:context=".RegisterDonor"
+    android:windowSoftInputMode="adjustResize"
+    android:id="@+id/main">
+
+    <EditText
+        android:id="@+id/full_name"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
+        android:hint="Full Name"
+        android:padding="10dp"
+        android:background="@drawable/input_field_bg"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"/>
+    <EditText
+        android:id="@+id/regemail"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="Email"
+        android:layout_below="@id/full_name"
+        android:padding="10dp"
+        android:background="@drawable/input_field_bg"
+        android:inputType="textEmailAddress"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/age"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/regemail"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="Age"
+        android:padding="10dp"
+        android:background="@drawable/input_field_bg"
+        android:inputType="number"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"/>
+
+    <RadioGroup
+        android:id="@+id/gender_group"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/age"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/female"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Female"
+            android:textColor="#8B0000" />
+
+        <RadioButton
+            android:id="@+id/male"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Male"
+            android:textColor="#8B0000" />
+    </RadioGroup>
+
+    <Spinner
+        android:id="@+id/blood_group"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/gender_group"
+        android:layout_centerHorizontal="true"
+        android:entries="@array/BG"
+        android:layout_marginTop="0dp"/>
+
+    <EditText
+        android:id="@+id/hemoglobin"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/blood_group"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/input_field_bg"
+        android:hint="Hemoglobin"
+        android:padding="10dp"
+        android:textColorHint="@color/black"
+        android:inputType="number"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/city"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/hemoglobin"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="City"
+        android:padding="10dp"
+        android:background="@drawable/input_field_bg"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/weight"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/city"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:hint="Weight (kg)"
+        android:padding="10dp"
+        android:background="@drawable/input_field_bg"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"/>
+
+
+    <RadioGroup
+        android:id="@+id/dates"
+        android:layout_width="250dp"
+        android:layout_height="35dp"
+        android:layout_below="@id/weight"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Donated before? "
+            android:textSize="16sp"
+            android:textColor="@color/black"/>
+
+        <RadioButton
+            android:id="@+id/yesd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yes"
+            android:textColor="#8B0000" />
+
+        <RadioButton
+            android:id="@+id/nod"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="No"
+            android:textColor="#8B0000" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnSelectDate"
+        android:layout_width="190dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/dates"
+        android:layout_gravity="center"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="0dp"
+        android:backgroundTint="#8B0000"
+        android:padding="10dp"
+        android:text="Select Last Donated Date"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/tvSelectedDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/dates"
+        android:layout_gravity="center"
+        android:layout_marginStart="13dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="0dp"
+        android:layout_toEndOf="@+id/btnSelectDate"
+        android:padding="10dp"
+        android:text="Selected Date"
+        android:textSize="15sp" />
+    <EditText
+        android:id="@+id/bp"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/tvSelectedDate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="0dp"
+        android:hint="Systolic Blood Pressure"
+        android:padding="10dp"
+        android:background="@drawable/input_field_bg"
+        android:inputType="numberDecimal"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"/>
+    <TextView
+        android:id="@+id/TC"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/bp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:textColor="#8B0000"
+        android:textSize="16sp"
+        android:clickable="true"
+        android:focusable="true"
+        android:textStyle="bold"
+        android:text="@string/underlined_text"
+        android:textAppearance="?android:attr/textAppearanceMedium"/>
+    <Button
+        android:id="@+id/register"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/TC"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="#8B0000"
+        android:text="Register"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>

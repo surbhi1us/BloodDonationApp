@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/createacc"
+    tools:context=".CreateAcc"
+    android:id="@+id/main">
+
+    <EditText
+        android:id="@+id/full_name"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="270dp"
+        android:hint="Full Name"
+        android:padding="10dp"
+        android:background="@drawable/input_field_bg"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/emails"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/full_name"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="Email Address"
+        android:padding="10dp"
+        android:background="@drawable/input_field_bg"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/passwords"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/emails"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="Password"
+        android:padding="10dp"
+        android:background="@drawable/input_field_bg"
+        android:inputType="textPassword"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"/>
+
+    <EditText
+        android:id="@+id/retype_password"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/passwords"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:hint="Retype Password"
+        android:padding="10dp"
+        android:background="@drawable/input_field_bg"
+        android:inputType="textPassword"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"/>
+
+    <CheckBox
+        android:id="@+id/terms_checkbox"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/retype_password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="@string/u_text"
+        android:textColor="#8B0000" />
+
+    <Button
+        android:id="@+id/signup_button"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/terms_checkbox"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#8B0000"
+        android:text="Sign Up"
+        android:textColor="#FFFFFF" />
+
+    <TextView
+        android:id="@+id/sign_in_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/signup_button"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:text="Already have an account? Login here"
+        android:textColor="#8B0000"
+        android:textSize="16sp"
+        android:clickable="true"
+        android:focusable="true"/>
+
+</RelativeLayout>

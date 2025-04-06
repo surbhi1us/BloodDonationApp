@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Blood Connect</string>
+    <string-array name="BG">
+        <item>Select Blood Group</item>
+        <item>O+ve</item>
+        <item>O-ve</item>
+        <item>A+ve</item>
+        <item>A-ve</item>
+        <item>B+ve</item>
+        <item>B-ve</item>
+        <item>AB+ve</item>
+        <item>AB-ve</item>
+    </string-array>
+    <string name="underlined_text"><u>**I agree to the Terms and Conditions**</u></string>
+    <string name="u_text"><u>I agree to the Terms and Conditions</u></string>
+</resources>

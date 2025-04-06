@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/finddonor"
+    tools:context=".FindDonor"
+    android:id="@+id/main">
+
+    <Spinner
+        android:id="@+id/blood_group"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="275dp"
+        android:entries="@array/BG"
+        android:background="@drawable/input_field_bg" />
+
+    <EditText
+        android:id="@+id/city"
+        android:layout_width="250dp"
+        android:layout_height="45dp"
+        android:layout_below="@id/blood_group"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/input_field_bg"
+        android:hint="City"
+        android:padding="10dp"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"/>
+
+    <Button
+        android:id="@+id/find_donor_button"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/city"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="40dp"
+        android:backgroundTint="#8B0000"
+        android:text="Find Donor"
+        android:textColor="#FFFFFF" />
+
+</RelativeLayout>
